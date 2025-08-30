@@ -1,0 +1,37 @@
+body {
+    background: black;
+    color: #ccc;
+    font-family: sans-serif;
+}
+
+a {
+    color: #49B;
+    text-decoration: none;
+}
+/* styles.css */
+
+.container {
+    display: grid;
+    gap: .8em;
+    /* space between items */
+
+    /* Auto-fit as many columns as will fit, min width 150px */
+    grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+}
+
+.item {
+    background-color: #FFF2;
+    /* color: white; */
+    padding: 1em;
+    text-align: left;
+    border-radius: 4px;
+    font-weight: bold;
+
+    & .description {
+        font-size: .6em;
+    }
+
+    & .title {
+        margin-top: 0;
+    }
+}

@@ -1,11 +1,34 @@
-<!doctype html>
-<html>
-  <body>
-    <h1>Courtside</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal HTML5 Boilerplate</title>
 
-    <h2>One</h2>
-    <h2>Two</h2>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Hello, courtside!</h1>
+    <div class="about">
+        <p>This tool does not host any videos — it just collects titles, descriptions, and links from www.courtside1891.website so you can browse games without spoilers.</p>
+        <p>All games still need to be watched on the original site — this is just a simple shortcut to safely find links and info.</p>
+        <p>Enjoy! :)</p>
+    </div>
+
+    <div id="target" class="container"></div>
+
+
+    <template id="video-template">
+      <article class="video item">
+        <h3 class="title"></h3>
+        <p class="description"></p>
+        <a class="videoUrl" href="" target="" ></a>
+      </article>
+    </template>
 
     <script type="module" src="../src/main.js"></script>
-  </body>
+
+</body>
 </html>
